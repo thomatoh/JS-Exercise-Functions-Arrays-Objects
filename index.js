@@ -177,7 +177,7 @@ function getCarInfoById(inventory, id) {
   //     const { car_make, car_model } = inventory[i]
   //     return `This is the ${car_make} ${car_model}.`
   // }
-  const { car_make, car_model } = inventory.find((item, index) => index === id);
+  const { car_make, car_model } = inventory.find((item, index) => item.id === id);
   return `This is the ${car_make} ${car_model}.`
 }
 
